@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.scroll-2::-webkit-scrollbar {
+    width: 0;
+    height: 5px;
+}
+
+.scroll-1::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scroll-1::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #888;
+}
+
+@layer components {
+    .btn-primary {
+        @apply p-[.90rem] bg-secondery text-white rounded-lg border-secondery text-sm
+    }
+
+    .btn-secondery {
+        @apply p-[.90rem] bg-transparent text-secondery rounded-lg border-2 border-secondery text-sm
+    }
+
+    .input-primary {
+        @apply p-[.90rem] bg-white text-secondery rounded-lg border-0 text-sm placeholder:text-secondery
+    }
+
+    .input-secondery {
+        @apply p-[.60rem] bg-white text-secondery rounded-lg border-2 text-sm border-secondery placeholder:text-secondery
+    }
+   
+    .btn-no-border {
+        @apply  w-full p-[.90rem] bg-transparent text-secondery rounded-lg text-sm text-center
+    }
+
+    .span-modal-required {
+        @apply  w-full p-1 bg-transparent text-secondery rounded-lg text-sm
+    }
+
+    .container-input-modal {
+        @apply w-full flex flex-col
+    }
+
+    .label-input-modal {
+        @apply p-1
+    }
+}
