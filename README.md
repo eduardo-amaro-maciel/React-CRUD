@@ -1,6 +1,7 @@
 # Teste para dev React
 
-## Links
+## Links 
+- (Ao acessar a primeira vez pode demorar ate todos os usuarios aparecerem para economizar a nuvem)
 - Front-end: Acessar pela parte de Environments do github acessando o primiero link
 - Back-end: https://github.com/eduardo-amaro-maciel/backend (Deploy feito na plataforma Render)
 
