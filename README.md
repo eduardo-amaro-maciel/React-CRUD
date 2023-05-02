@@ -16,7 +16,7 @@
 - react-input-mask: mascara de inputs (não utilizado)
 - react-select: Select com multiplas opções
 - zod: integração junto ao react-hook-form para validação
-- vitest: Testes (não utilizado)
+- vitest: Testes (Utilizado parcialmente)
 - react-meta-tags: Melhora no SEO de paginas SPA's (não utilizado)
 - supabse: banco de dados
 - node.js: uso para o servidor junto com express
