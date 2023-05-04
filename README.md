@@ -1,6 +1,7 @@
 # Teste para dev React
 
-## Links
+## Links 
+- (Ao acessar a primeira vez pode demorar ate todos os usuarios aparecerem para economizar a nuvem)
 - Front-end: Acessar pela parte de Environments do github acessando o primiero link
 - Back-end: https://github.com/eduardo-amaro-maciel/backend (Deploy feito na plataforma Render)
 
@@ -16,7 +17,7 @@
 - react-input-mask: mascara de inputs (não utilizado)
 - react-select: Select com multiplas opções
 - zod: integração junto ao react-hook-form para validação
-- vitest: Testes (não utilizado)
+- vitest: Testes (Utilizado parcialmente)
 - react-meta-tags: Melhora no SEO de paginas SPA's (não utilizado)
 - supabse: banco de dados
 - node.js: uso para o servidor junto com express
