@@ -1,4 +1,4 @@
-import { Table, Thead, Tbody, Tr, Th, Td, TableContainer } from '@chakra-ui/react';
+import { Table, Thead, Tbody, Tr, Th, Td, TableContainer, Alert, AlertIcon } from '@chakra-ui/react';
 import useFilter from '../../hooks/useFilter';
 import { api } from '../../services/api';
 import { useQuery } from '@tanstack/react-query';
@@ -21,9 +21,14 @@ export default function All() {
 
   return (
     <div className="">
-      
+
+      <Alert status='info' className='rounded-lg'>
+        <AlertIcon />
+        Somente usuarios com empresas registradas serão exibidos!
+      </Alert>
+
       {/* Filtro para a tabela */}
-      <InputFilter 
+      <InputFilter
         searchBy={searchBy}
         searchValue={searchValue}
         handleSearchChange={handleSearchChange}

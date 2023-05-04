@@ -1,7 +1,7 @@
 import axios from "axios";
 
-//const BASE_URL = 'http://localhost:4000/'
-const BASE_URL = 'https://backend-teste-gq17.onrender.com/'
+const BASE_URL = 'http://localhost:4000/'
+//const BASE_URL = 'https://backend-teste-gq17.onrender.com/'
 
 const http = axios.create({
     baseURL: BASE_URL,
