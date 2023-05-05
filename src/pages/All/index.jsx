@@ -6,6 +6,7 @@ import InputFilter from '../../components/InputFilter';
 import { filterByUsersAndCompanies } from '../../utils/selectoptions';
 import formatDate from '../../utils/formatDate';
 import Loading from '../../components/Loading';
+import TesteInput from '../../components/TesteInput';
 
 export default function All() {
 
@@ -19,54 +20,55 @@ export default function All() {
 
   const { searchValue, searchBy, filteredData, handleSearchChange, handleSelectChange } = useFilter(data)
 
-  return (
-    <div className="">
+  // return (
+  //   <div className="">
 
-      <Alert status='info' className='rounded-lg'>
-        <AlertIcon />
-        Somente usuarios com empresas registradas serão exibidos!
-      </Alert>
+  //     <Alert status='info' className='rounded-lg'>
+  //       <AlertIcon />
+  //       Somente usuarios com empresas registradas serão exibidos!
+  //     </Alert>
 
-      {/* Filtro para a tabela */}
-      <InputFilter
-        searchBy={searchBy}
-        searchValue={searchValue}
-        handleSearchChange={handleSearchChange}
-        handleSelectChange={handleSelectChange}
-        by={filterByUsersAndCompanies}
-      />
+  //     {/* Filtro para a tabela */}
+  //     <InputFilter
+  //       searchBy={searchBy}
+  //       searchValue={searchValue}
+  //       handleSearchChange={handleSearchChange}
+  //       handleSelectChange={handleSelectChange}
+  //       by={filterByUsersAndCompanies}
+  //     />
 
-      {/* Tabela mostrando todos os usuarios e suas empresas */}
-      <TableContainer className="bg-white rounded-lg scroll-1">
-        <Table variant="simple">
-          <Thead>
-            <Tr>
-              <Th>Nome</Th>
-              <Th>Email</Th>
-              <Th>Telefone</Th>
-              <Th>Nascimento</Th>
-              <Th>Cidade</Th>
-              <Th>Nome da Empresa</Th>
-              <Th>CNPJ da Empresa</Th>
-              <Th>Endereço da Empresa</Th>
-            </Tr>
-          </Thead>
-          <Tbody>
-            {filteredData.map(({ usuario, empresa }, index) => (
-              <Tr key={index}>
-                <Td>{usuario.nome}</Td>
-                <Td>{usuario.email}</Td>
-                <Td>{usuario.telefone}</Td>
-                <Td>{formatDate(usuario.data_nascimento)}</Td>
-                <Td>{usuario.cidade_nascimento}</Td>
-                <Td>{empresa.nome}</Td>
-                <Td>{empresa.cnpj}</Td>
-                <Td>{empresa.endereco}</Td>
-              </Tr>
-            ))}
-          </Tbody>
-        </Table>
-      </TableContainer>
-    </div>
-  )
+  //     {/* Tabela mostrando todos os usuarios e suas empresas */}
+  //     <TableContainer className="bg-white rounded-lg scroll-1">
+  //       <Table variant="simple">
+  //         <Thead>
+  //           <Tr>
+  //             <Th>Nome</Th>
+  //             <Th>Email</Th>
+  //             <Th>Telefone</Th>
+  //             <Th>Nascimento</Th>
+  //             <Th>Cidade</Th>
+  //             <Th>Nome da Empresa</Th>
+  //             <Th>CNPJ da Empresa</Th>
+  //             <Th>Endereço da Empresa</Th>
+  //           </Tr>
+  //         </Thead>
+  //         <Tbody>
+  //           {filteredData.map(({ usuario, empresa }, index) => (
+  //             <Tr key={index}>
+  //               <Td>{usuario.nome}</Td>
+  //               <Td>{usuario.email}</Td>
+  //               <Td>{usuario.telefone}</Td>
+  //               <Td>{formatDate(usuario.data_nascimento)}</Td>
+  //               <Td>{usuario.cidade_nascimento}</Td>
+  //               <Td>{empresa.nome}</Td>
+  //               <Td>{empresa.cnpj}</Td>
+  //               <Td>{empresa.endereco}</Td>
+  //             </Tr>
+  //           ))}
+  //         </Tbody>
+  //       </Table>
+  //     </TableContainer>
+  //   </div>
+  // )
+  return <TesteInput/>
 }
