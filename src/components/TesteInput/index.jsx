@@ -55,3 +55,52 @@ export default function TesteInput() {
         </form>
     )
 }
+
+// exemplo input cep com react mask 
+
+// import React from "react";
+// import InputMask from "react-input-mask";
+// // import InputMask from "react-text-mask";
+// import { useForm, Controller } from "react-hook-form";
+
+// import "./styles.css";
+
+// export default function App() {
+//   const [user, setUser] = React.useState({});
+//   const { register, handleSubmit, control, reset } = useForm();
+
+//   function onSubmit(data) {
+//     console.log(data);
+//   }
+
+//   return (
+//     <div className="App">
+//       <form onSubmit={handleSubmit(onSubmit)}>
+//         <input
+//           type="text"
+//           name="name"
+//           placeholder="User full name"
+//           ref={register}
+//           // defaultValue={user.name}
+//         />
+//         <input
+//           type="email"
+//           name="email"
+//           placeholder="User email"
+//           ref={register}
+//           // defaultValue={user.email}
+//         />
+//         <Controller
+//           disableUnderline
+//           placeholder="999.999.999-99"
+//           as={InputMask}
+//           control={control}
+//           maskChar=""
+//           mask="999.999.999-99"
+//           name="cpf"
+//         />
+//         <button type="submit">SEND</button>
+//       </form>
+//     </div>
+//   );
+// }
